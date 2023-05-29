@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>플렉스 연습2</title>
+    <style>
+      .container {
+        width: 700px;
+        background-color: antiquewhite;
+        border: 1px solid black;
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        display: flex;
+        /* flex 조건 : 부모안에 자식이 있어야함 , 부모에 flex 입력해야 먹힘 */
+      }
+      .box {
+        width: 80px;
+        background-color: #222;
+        padding: 5px 45px;
+        margin: 5px;
+      }
+      #opt1 {
+        flex-flow: row wrap;
+        /* flex-flow : row랑 wrap 동시에 쓸 수 있음 */
+      }
+      #opt2 {
+        flex-flow: row nowrap;
+      }
+      #opt3 {
+        flex-wrap: wrap-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="opt1">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      <div class="box"><p>5</p></div>
+      <div class="box"><p>6</p></div>
+    </div>
+    <div class="container" id="opt2">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      <div class="box"><p>5</p></div>
+      <div class="box"><p>6</p></div>
+    </div>
+    <div class="container" id="opt3">
+      <div class="box"><p>1</p></div>
+      <div class="box"><p>2</p></div>
+      <div class="box"><p>3</p></div>
+      <div class="box"><p>4</p></div>
+      <div class="box"><p>5</p></div>
+      <div class="box"><p>6</p></div>
+    </div>
+  </body>
+</html>
